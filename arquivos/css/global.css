@@ -1,6 +1,6 @@
 @import url(style.css);
 
-/*referência*/
+/*referência**********/
 /*ícones*/
 @import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
 @import url('https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css');
@@ -8,14 +8,14 @@
 /*tipografia*/
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/*redefinir*/
+/*redefinir**********/
 *{
     padding: 0; margin: 0;
     text-decoration: none;
     box-sizing: border-box;
 }
 
-/*identidade visual*/
+/*identidade visual**********/
 :root{
     /*paleta de cores*/
     --cor-primaria:rgb(99, 57, 145);
@@ -53,13 +53,13 @@ body{
     color: var(--cor-conteudo);
 }
 
-/*seletor de texto*/
+/*seletor de texto**********/
 ::selection{
     background-color: var(--cor-primaria);
     color: var(--cor-conteudo);
 }
 
-/*barra de rolagem*/
+/*barra de rolagem**********/
 ::-webkit-scrollbar{
     width: 8px; height: 8px;
 }
@@ -105,6 +105,7 @@ a {
 
 a:hover,a:focus{
     color: var(--cor-primaria-sombra);
+    font-weight: bold;
 }
 
 /*títulos*/
@@ -151,9 +152,7 @@ h6 {
     color: var(--cor-conteudo);
 }
 
-/*botões*/
-
-/*inputs*/
+/*botões**********/
 input{
     background: var(--cor-primaria);
     color: var(--cor-fundo);
@@ -190,12 +189,8 @@ input[type="radio"]:checked ~ .conteudo-aba{
     display: block;
 }
 
-/*rodapé*/
+/*rodapé**********/
 footer{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: row;
     background: var(--cor-sobreposta);
     color: var(--cor-primaria);
     font-size: 1rem;
@@ -204,11 +199,7 @@ footer{
 }
 
 footer a,footer a:hover{
-    color: var(--darkClaro);
-}
-
-footer a:hover{
-    font-weight: bold;
+    color: var(--cor-conteudo);
 }
 
 #copyright{
