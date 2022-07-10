@@ -19,6 +19,8 @@
 
         <a href="#"><input type="button" value="Entrar"></a>
     </section>
+
+
     <section class="padding flex-center-center-column" id="detalhes">
         <h6>Diferencial</h6>
         <h3>O essencial</h3>
@@ -39,39 +41,64 @@
             </div>
         </div>
     </section>
-    <section class="nav_tabs height" id="funcionalidade">
-        <ul>
-            <li>
-                <input type="radio" id="tab1" class="rd_tab" name="tabs" checked>
-                <label for="tab1" class="tab_label">Tab 1</label>
-                <div class="tab-content">
-                    <h4>Comunicação</h4>
-                    <h2>Se comunique com facilidade</h2>
-                    <p>Alcance mais pessoas de uma forma mais clara.</p>
-                    <p>Com a forte comunidade e milhares de acessos diários, a Packzin é o local ideal para conquistar novos clientes e se comunicar melhor com aqueles que já são da sua rede. Interaja melhor com aqueles que mais precisam e expanda sua rede de contatos.</p>
-                </div>
-            </li>
-            <li>
-                <input type="radio" name="tabs" class="rd_tab" id="tab2">
-                <label for="tab2" class="tab_label">Tab 2</label>
-                <div class="tab-content">
-                    <h4>Entrega</h4>
-                    <h2>Foque em criar</h2>
-                    <p>Aceitar principais meios de pagamento, liberar conteúdo, suporte e atingir novos públicos. A gente cuida da parte chata e você em criar.</p>
-                </div>
-            </li>
-            <li>
-                <input type="radio" name="tabs" class="rd_tab" id="tab3">
-                <label for="tab3" class="tab_label">Tab 3</label>
-                <div class="tab-content">
-                    <h4>Mensagens</h4>
-                    <h2>Mensagens</h2>
-                    <p>Comunicação é o meio</p>
-                    <p>Converse em tempo real, faça chamadas de vídeo diretamente com outros usuários. Em breve chamadas de áudio em grupo estilo Discord & Aplicativo para Android/IOS.</p>
-                </div>
-            </li>
-        </ul>
+
+
+    <section class="background-reverse flex-center-center-column height" id="funcionalidade">
+        <h6>Funções</h6>
+        <h3>Faça mais com a Packzin</h3>
+        <div class="aba-nav">
+            <ul>
+                <li>
+                    <input type="radio" name="abas" class="rd_tab" id="abaComunicacao" checked>
+                    <label for="abaComunicacao">Comunicação</label>
+                    <div class="conteudo-aba margin">
+                        <div class="flex">
+                            <img src="../arquivos/midia/graphic.png" alt="Mão segurando um celular">
+                            <article>
+                                <h3>Se comunique com facilidade</h3>
+                                <p>Alcance mais pessoas de uma forma mais clara.</p>
+                                <p>
+                                    Com a forte comunidade e milhares de acessos diários, a Packzin é o local ideal para conquistar novos clientes e se comunicar melhor com aqueles que já são da sua rede. Interaja melhor com aqueles que mais precisam e expanda sua rede de contatos.
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <input type="radio" name="abas" class="rd_tab" id="abaEntrega">
+                    <label for="abaEntrega">Entrega</label>
+                    <div class="conteudo-aba margin">
+                        <div class="flex">
+                            <img src="../arquivos/midia/graphic.png" alt="Mão segurando um celular">
+                            <article>
+                                <h3>Foque em criar</h3>
+                                <p>
+                                    Aceitar principais meios de pagamento, liberar conteúdo, suporte e atingir novos públicos. A gente cuida da parte chata e você em criar.
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <input type="radio" name="abas" class="rd_tab" id="abaMensagens">
+                    <label for="abaMensagens">Mensagens</label>
+                    <div class="conteudo-aba margin">
+                        <div class="flex">
+                            <img src="../arquivos/midia/graphic.png" alt="Mão segurando um celular">
+                            <article>
+                                <h3>Mensagens</h3>
+                                <p>Comunicação é o meio!</p>
+                                <p>Converse em tempo real, faça chamadas de vídeo diretamente com outros usuários.</p>
+                                <p>Em breve chamadas de áudio em grupo estilo Discord & Aplicativo para Android/IOS.</p>
+                            </article>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </section>
+
+
     <section class="height padding flex-center-center-column background-light" id="tutorial">
         <h6>Tutorial</h6>
         <h3>Curta mais com o Packzin</h3>
@@ -105,19 +132,19 @@
         </div>
     </section>
 
+
     <footer>
         <a href="termos.html" class="m-2">Termos</a>
-        <a target="_blank" href="mailto:contato@packzin.com.br">
-            <p id="copy"></p>
-        </a>
-        <a title="Instagram" target="_blank" href="https://www.instagram.com/opackzin"><i class="fi fi-brands-instagram"></i></a>
 
-        <script>
-            var copy = window.document.querySelector('#copy')
-            var agora = new Date()
-            var ano = agora.getFullYear()
-            copy.innerHTML = `&copy; ${ano} Packzin`
-        </script>
+        <a target="_blank" href="mailto:contato@packzin.com.br">
+            <p id="copyright"></p>
+        </a>
+
+        <a title="Instagram" target="_blank" href="https://www.instagram.com/opackzin">
+            <i class="fi fi-brands-instagram"></i>
+        </a>
     </footer>
+
+    <script src="../arquivos/js/script.js"></script>
 </body>
 </html>
