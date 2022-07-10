@@ -109,6 +109,57 @@ img{
     box-shadow: 2px 5px 12px rgba(24, 24, 24, 0.1);
 }
 
+.aba-nav{
+    position: relative;
+    width: 75%; height: 400px;
+    background-color: var(--cor-sobreposta);
+    box-shadow: 2px 5px 12px rgba(24, 24, 24, 0.1);
+}
+
+@media only screen and (max-width:500px){
+    .aba-nav{
+        width: 95%;
+    }
+}
+
+.aba-nav ul{
+    list-style: none;
+}
+
+.aba-nav ul li{
+    float: left;
+}
+
+.aba-nav label{
+    width: 339px;
+    display: block;
+    background-color: var(--cor-fundo);
+    color:var(--cor-conteudo);
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:500px){
+    .aba-nav label{
+        width: 100% !important;
+    }
+}
+
+.conteudo-aba{
+    display: none;
+    position: absolute;
+    padding: 2% 4% 4% 4%;
+    left: 0;	
+}
+
+@media only screen and (max-width:500px){
+    .aba-nav img{
+        display: none;
+    }
+}
+
 .two-columns-10-90{
     display: grid;
     grid-template-columns: 0.1fr 1.9fr;
@@ -141,54 +192,4 @@ img{
     .img-height{
         display: none;
     }
-}
-
-.aba-nav{
-    position: relative;
-    width: 75%; height: 400px;
-    background-color: var(--cor-sobreposta);
-    box-shadow: 2px 5px 12px rgba(24, 24, 24, 0.1);
-}
-
-.aba-nav ul{
-    list-style: none;
-}
-
-.aba-nav ul li{
-    float: left;
-}
-
-.aba-nav label{
-    width: 339px;
-    display: block;
-    background-color: var(--cor-fundo);
-    color:var(--cor-conteudo);
-    font-size: 1.5rem;
-    text-align: center;
-    padding: 1rem;
-    cursor: pointer;
-}
-
-.aba-nav input[type="radio"] { 
-    display:none;
-    position: absolute;
-}
-
-.aba-nav input[type="radio"]:checked ~ label { 
-    background-color: var(--cor-sobreposta);
-    color:var(--cor-primaria);
-    font-weight: bold;
-    border-top: 4px solid var(--cor-primaria);
-    border-radius: 4px;
-}
-
-.conteudo-aba{
-    display: none;
-    position: absolute;
-    padding: 2% 4% 4% 4%;
-    left: 0;	
-}
-
-input[type="radio"]:checked ~ .conteudo-aba{
-    display: block;
 }
