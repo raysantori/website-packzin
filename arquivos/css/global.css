@@ -1,0 +1,185 @@
+@import url(style.css);
+
+/*referência*/
+/*ícones*/
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css');
+
+/*tipografia*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*redefinir*/
+*{
+    padding: 0; margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/*identidade visual*/
+:root{
+    /*paleta de cores*/
+    --cor-primaria:rgb(99, 57, 145);
+    --cor-primaria-sombra:rgb(73, 42, 105);
+    --cor-sobreposta:#fff;
+    --cor-fundo:#eee;
+    --cor-conteudo:#181818;
+    --cor-conteudo-destaque:#000000;
+
+    /*tipografia*/
+    --fonte-destaque: sans-serif;
+    --fonte-conteudo:'Nunito', 'Nunito Sans', sans-serif;
+}
+
+.dark-mode:root{
+    /*paleta de cores*/
+    --cor-primaria:rgb(214, 97, 156);
+    --cor-primaria-sombra:rgb(170, 78, 124);
+    --cor-sobreposta:#323232;
+    --cor-fundo:#202020;
+    --cor-conteudo:#B9B9B9;
+    --cor-conteudo-destaque:#7C7C7C;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: url('../midia/fundo-quad.png');
+    background-color: var(--cor-fundo);
+    background-attachment: fixed;
+    font-family: var(--fonte-conteudo);
+    font-size: 16px;
+    color: var(--cor-conteudo);
+}
+
+/*seletor de texto*/
+::selection{
+    background-color: var(--cor-primaria);
+    color: var(--cor-conteudo);
+}
+
+/*barra de rolagem*/
+::-webkit-scrollbar{
+    width: 8px; height: 8px;
+}
+
+::-webkit-scrollbar-track,::-webkit-scrollbar-thumb{
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--cor-primaria);
+}
+
+/*marca-texto**********/
+.height h2,.height > p{
+    text-align: center;
+}
+
+.height > p{
+    font-size: 2rem;
+}
+
+a {
+    color: var(--cor-primaria);
+}
+
+a:hover,a:focus{
+    color: var(--cor-primaria-sombra);
+}
+
+/*títulos*/
+h1,h2,h3,h4,h5{
+    margin: 1rem 0;
+    font-weight: 100;
+}
+
+h2,h3,h5,h6{
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 45px;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+.rightside > h3{
+    margin: 0.5rem 0;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 2.5rem;
+}
+
+h5 i{
+    font-size: calc(28px - 0.75rem);
+    color: var(--cor-primaria);
+}
+
+h6 {
+    text-transform: uppercase;
+    color: var(--cor-conteudo-destaque);
+}
+
+/*botões*/
+
+/*inputs*/
+input{
+    background: var(--cor-primaria);
+    color: var(--cor-fundo);
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 3px 3px 5px rgba(24, 24, 24, 0.25);
+    margin: 1.5rem;
+    cursor: pointer;
+}
+
+input:hover{
+    background: var(--cor-primaria-sombra);
+    transition: all 1s ease;
+}
+
+/*rodapé*/
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    background: var(--cor-sobreposta);
+    color: var(--cor-primaria);
+    font-size: 1rem;
+    padding: 1.25rem;
+    border-top: 1px solid rgba(225, 225, 225, 0.25);
+}
+
+footer a,footer a:hover{
+    color: var(--darkClaro);
+}
+
+footer a:hover{
+    font-weight: bold;
+}
+
+#copy{
+    text-transform: uppercase;
+}
